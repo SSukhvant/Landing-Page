@@ -3,7 +3,7 @@ import "./Testimonials.scss";
 import { useRef } from "react";
 import { image } from "../../constant";
 // import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { BsArrowLeft, BsArrowRight} from 'react-icons/bs';
+import { BsArrowLeft, BsArrowRight, BsStarFill} from 'react-icons/bs';
 
 let data = [
    {
@@ -74,7 +74,7 @@ const Testimonials = () => {
   const renderStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
-      stars.push(<div className="rating-box" key={i}><span className="rating">&#9733;</span></div>);
+      stars.push(<div className="rating-box" key={i}><span className="rating"><BsStarFill/></span></div>);
     }
     return stars;
   };
@@ -82,7 +82,7 @@ const Testimonials = () => {
   const renderNoStars = (rating) => {
     const noStars = [];
     for (let i = 0; i < rating; i++) {
-      noStars.push(<div className="no-rating-box" key={i}><span className="no-rating">&#9733;</span></div>);
+      noStars.push(<div className="no-rating-box" key={i}><span className="no-rating"><BsStarFill/></span></div>);
     }
     return noStars;
   };
