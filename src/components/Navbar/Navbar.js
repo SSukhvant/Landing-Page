@@ -3,9 +3,9 @@ import logo from '../../assets/logo/logo.png'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary shadow-sm">
     <div className="container-sm">
-      <a className="navbar-brand" href="/#"><img src={logo} alt='logo'/></a>
+      <a className="navbar-brand" href="/#"><img src={logo} alt='logo' className='nav-logo'/></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -15,13 +15,13 @@ const Navbar = () => {
             <a className="nav-link active" aria-current="page" href="/#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/#">Pricing</a>
+            <a className="nav-link" href="/#contact">Pricing</a>
           </li>
           <li className="nav-item">
-          <a className="nav-link" href="/#">Features</a>
+          <a className="nav-link" href="/#kb">Features</a>
         </li>
         <li className="nav-item">
-        <a className="nav-link" href="/#">Contact Us</a>
+        <a className="nav-link" href="/#contact">Contact Us</a>
       </li>
         </ul>
         <div className="d-flex">

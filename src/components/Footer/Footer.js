@@ -12,11 +12,10 @@ const Footer = () => {
       <li><a href='/#'>Solutions</a></li>
       <li><a href='/#'>Resources</a></li>
       <li><a href='/#'>Info</a></li>
-      <li><a href='/#'><IoLogoTwitter/></a> <a href='/#'><BiLogoLinkedin/></a></li>
+      <li><a href='/#'><IoLogoTwitter/> </a> <a href='/#'> <BiLogoLinkedin/></a></li>
       </ul>
       <div className='d-flex justify-content-center align-items-center mt-5'>
-      <img src={logo} alt='logo'/>
-      <h2 className='me-4'> | </h2><h6>All right reserved 2023</h6>
+      <img src={logo} alt='logo' className='footer-logo'/><span> | All right reserved 2023</span>
       </div>
       </div>
     </footer>

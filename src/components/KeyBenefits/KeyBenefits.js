@@ -10,47 +10,47 @@ const KeyBenefits = () => {
     },
     {
       imgUrl: `${image.kb2}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Fast and Accurate",
+      description: "Enjoy speedy processing and precise reviewing through our advanced tech.",
     },
     {
       imgUrl: `${image.kb3}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Efficient Data Handling",
+      description: "Move data in and out effortlessly with our unique features.",
     },
     {
       imgUrl: `${image.kb4}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Tailored To Your Needs",
+      description: "Questa molds to fit your organization's specific requirements.",
     },
     {
       imgUrl: `${image.kb5}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Stay Updated",
+      description: "With our mobile app, you're always informed, anytime, anywhere.",
     },
     {
       imgUrl: `${image.kb6}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Smart Data Insights",
+      description: "Let our AI help you uncover the significant insights in your data.",
     },
     {
       imgUrl: `${image.kb7}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Affordable Excellence",
+      description: "Get top-quality eDiscovery features without the premium price.",
     },
     {
       imgUrl: `${image.kb8}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
+      title: "Professional support",
+      description: "Get professional support whenever you need it.",
     },
     {
       imgUrl: `${image.kb9}`,
-      title: "Optimal User Experience",
-      description: "Dive into a simple yet powerful UI designed for everyone.",
-    },
+      title: "Quick Start",
+      description: "Get to work quickly. Easy and fast onboarding.",
+    }
   ];
   return (
-    <section className="app__kb">
+    <section className="app__kb" id="kb">
       <div className="container-sm">
         <h1 className="text-center app__kb-heading">Key Benefits</h1>
         <div className="mt-4 mt-lg-5 py-4 text-center">

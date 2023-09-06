@@ -2,7 +2,8 @@ import Slider from "react-slick";
 import "./Testimonials.scss";
 import { useRef } from "react";
 import { image } from "../../constant";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { BsArrowLeft, BsArrowRight} from 'react-icons/bs';
 
 let data = [
    {
@@ -115,12 +116,12 @@ const Testimonials = () => {
         ))}
       </Slider>
       <div className="d-flex justify-content-center align-items-center gap-4">
-      <button className="btn btn-light back" onClick={() => arrowRef.current.slickPrev()}>
-        <IoIosArrowBack/>
-      </button>
-      <button className="btn btn-light next" onClick={() => arrowRef.current.slickNext()}>
-        <IoIosArrowForward/>
-      </button>
+      <div className="back" onClick={() => arrowRef.current.slickPrev()}>
+        <BsArrowLeft/>
+      </div>
+      <div className="next" onClick={() => arrowRef.current.slickNext()}>
+        <BsArrowRight/>
+      </div>
       </div>
       </div>
     </section>

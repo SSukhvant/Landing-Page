@@ -1,4 +1,17 @@
-.app__nav-btn{
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.app__nav-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     background: #CD3266 !important;
     color: white !important;
+}
+
+.nav-logo{
+    width: 200px;
+    height: 75px;
 }

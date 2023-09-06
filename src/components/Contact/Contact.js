@@ -41,7 +41,7 @@ function Contact() {
   };
 
   return (
-    <section className="app__contact">
+    <section className="app__contact" id="contact">
       <div className="container-sm">
         <h1 className="contact-heading">Need more info?</h1>
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -76,7 +76,8 @@ function Contact() {
               <label htmlFor="inquiryType">Inquiry Type</label>
               <select id="inquiryType" className="form-input" name="inquryType" value={formData.inquryType}
               onChange={handleChange}>
-                <option value="general">General</option>
+              <option value="">Select</option>
+                <option value="general">Information</option>
                 <option value="support">Support</option>
                 <option value="sales">Sales</option>
               </select>
@@ -90,8 +91,8 @@ function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                placeholder="@example.com"
                 className="form-input"
-                placeholder="Email Address"
               />
             </div>
 
@@ -103,7 +104,7 @@ function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 className="form-input"
-                placeholder="Your message..."
+                placeholder="Hi, I need..."
                 rows="5"
                 cols="50"
               ></textarea>

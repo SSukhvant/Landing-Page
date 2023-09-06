@@ -9,6 +9,8 @@ import kb8 from '../assets/kb/kb8.png';
 import kb9 from '../assets/kb/kb9.png';
 import user from '../assets/kb/user.png';
 import mountains from '../assets/bg/Montanhas.png';
+import left from '../assets/arrow/left.png';
+import right from '../assets/arrow/right.png';
 
 const image = {
     kb1,
@@ -21,6 +23,8 @@ const image = {
     kb8,
     kb9,
     user,
-    mountains
+    mountains,
+    right,
+    left
 }
  export default image;

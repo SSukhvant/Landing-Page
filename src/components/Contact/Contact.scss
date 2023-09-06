@@ -15,12 +15,17 @@
       }
 }
 
+form{
+  max-width: 915px;
+  margin: 0 auto;
+}
+
 .form-input {
     background-color: #fff;
     color: #000;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    border: solid 2px #000000;
+    border: solid 1px #000000;
     border-radius: 30px;
     padding: 10px 20px;
     margin-top: 1rem;
@@ -32,7 +37,7 @@
   .form-input:focus {
     background-color: #cd3266;
     color: #ffffff;
-    border: solid 2px #cd3266;
+    border: solid 1px #cd3266;
     outline: none;
     &::placeholder{
         color: white;
@@ -46,6 +51,7 @@
     background: #fff;
     color: #000;
   }
+  
 
   
 .submit-button {
