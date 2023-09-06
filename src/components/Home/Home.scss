@@ -1,0 +1,79 @@
+$lg-breakpoint: 1200px;
+$sm-breakpoint: 576px;
+
+.app__hero{
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 28rem;
+    background: url('../../assets/bg/hero-bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    @media (max-width: $lg-breakpoint) {
+        padding-top: 10rem;
+        padding-bottom: 24rem;
+      }
+      @media (max-width: $sm-breakpoint) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      } 
+    
+    .app__hero-text{
+        .app__hero-btn{
+            background: #CD3266 !important;
+            color: white !important;
+        }
+        .app__heading{
+            h1{
+                font-family: 'Poppins', sans-serif;;
+                font-size: 100px;
+                font-weight: 500;
+                text-align: center;
+
+                @media (max-width: $lg-breakpoint) {
+                    font-size: 50px;
+                  }
+                @media (max-width: $sm-breakpoint) {
+                    margin-left: 2rem;
+                    text-align: start;
+                  }
+            }
+            h4{
+                font-family: 'Poppins', sans-serif;;
+                font-size: 40px;
+                font-weight: 400;
+                margin-right: -2.5rem;
+                text-align: end;
+
+                @media (max-width: $lg-breakpoint) {
+                    font-size: 18px;
+                    margin-right: 0;
+                  }
+                @media (max-width: $sm-breakpoint) {
+                    font-size: 20px;
+                    margin-right: 0;
+                    text-align: center;
+                  }
+            }
+        }
+      .app__p{
+         max-width: 520px;
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 1rem;
+            @media (max-width: $sm-breakpoint) {
+                font-size: 16px;
+                margin-right: 0;
+              }
+            }
+        }
+    }
+    .mountains{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+}
