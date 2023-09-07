@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Contact.scss";
+import AutoComplete from "./AutoComplete";
+import { autoCompleteData } from "./Data";
 
 function Contact() {
 
@@ -7,7 +9,7 @@ function Contact() {
     inquryType: '',
   });
 
-  const [isSelectFocused, setIsSelectFocused] = useState(false);
+  // const [isSelectFocused, setIsSelectFocused] = useState(false);
 
 
   const handleSubmit = async (e) => {
@@ -39,13 +41,13 @@ function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSelectFocus = () => {
-    setIsSelectFocused(true);
-  };
+  // const handleSelectFocus = () => {
+  //   setIsSelectFocused(true);
+  // };
 
-  const handleSelectBlur = () => {
-    setIsSelectFocused(false);
-  };
+  // const handleSelectBlur = () => {
+  //   setIsSelectFocused(false);
+  // };
   
 
   return (
@@ -82,7 +84,7 @@ function Contact() {
 
             <div className="col-12 col-md-6 form-group">
               <label htmlFor="inquiryType">Inquiry Type</label>
-              <div className={`select ${isSelectFocused ? 'focused' : ''}`}>
+{  /*            <div className={`select ${isSelectFocused ? 'focused' : ''}`}>
               <select id="inquiryType" className="form-input" name="inquryType" value={formData.inquryType}
               onChange={handleChange} onFocus={handleSelectFocus}
               onBlur={handleSelectBlur} >
@@ -91,7 +93,8 @@ function Contact() {
                 <option value="support">Support</option>
                 <option value="sales">Sales</option>
               </select>
-              </div>
+  </div> */}
+            <AutoComplete data={autoCompleteData}/> 
             </div>
 
             <div className="col-12 col-md-6 form-group">
