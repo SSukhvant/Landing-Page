@@ -12,7 +12,7 @@ const Footer = () => {
       <li><a href='/#'>Solutions</a></li>
       <li><a href='/#'>Resources</a></li>
       <li><a href='/#'>Info</a></li>
-      <li><a href='/#'><IoLogoTwitter/> </a> <a href='/#'> <BiLogoLinkedin/></a></li>
+      <li><a href='https://twitter.com'><IoLogoTwitter/> </a> <a href='https://in.linkedin.com'> <BiLogoLinkedin/></a></li>
       </ul>
       <div className='d-flex justify-content-center align-items-center mt-5'>
       <img src={logo} alt='logo' className='footer-logo'/><span> | All right reserved 2023</span>

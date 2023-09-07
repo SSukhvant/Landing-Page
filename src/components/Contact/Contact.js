@@ -4,17 +4,11 @@ import "./Contact.scss";
 function Contact() {
 
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName:'',
     inquryType: '',
-    email: '',
-    message: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  const [isSelectFocused, setIsSelectFocused] = useState(false);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,6 +33,20 @@ function Contact() {
       console.error('Error:', error);
     }
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSelectFocus = () => {
+    setIsSelectFocused(true);
+  };
+
+  const handleSelectBlur = () => {
+    setIsSelectFocused(false);
+  };
+  
 
   return (
     <section className="app__contact" id="contact">
@@ -74,13 +82,16 @@ function Contact() {
 
             <div className="col-12 col-md-6 form-group">
               <label htmlFor="inquiryType">Inquiry Type</label>
+              <div className={`select ${isSelectFocused ? 'focused' : ''}`}>
               <select id="inquiryType" className="form-input" name="inquryType" value={formData.inquryType}
-              onChange={handleChange}>
+              onChange={handleChange} onFocus={handleSelectFocus}
+              onBlur={handleSelectBlur}>
               <option value="">Select</option>
                 <option value="general">Information</option>
                 <option value="support">Support</option>
                 <option value="sales">Sales</option>
               </select>
+              </div>
             </div>
 
             <div className="col-12 col-md-6 form-group">

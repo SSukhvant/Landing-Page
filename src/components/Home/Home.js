@@ -12,7 +12,7 @@ const Home = () => {
       <div className='app__p'>
       <p className='text-center text-white'>We're redefining efficiency in the eDiscovery process, harmonizing speed, intelligence, adaptability, and user-centric design.</p>
       </div>
-      <button className='btn app__hero-btn rounded-pill px-5 py-3 mt-2 mx-auto' type='button'>Try now</button>
+      <a href='/#contact' alt="try now"><button className='btn app__hero-btn rounded-pill px-5 py-3 mt-2 mx-auto' type='button'>Try now</button></a>
       </div>
       <img src={mountains} alt='Mountains' className='mountains'/>
     </section>

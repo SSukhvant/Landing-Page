@@ -90,7 +90,7 @@ const Testimonials = () => {
 
 
   return (
-    <section className="app__test">
+    <section className="app__test" id="testimonials">
       <h1 className="app__test-h1">Clients Thinks</h1>
       <div className="app__test-p">
         <p className="text-center">

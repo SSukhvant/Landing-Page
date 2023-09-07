@@ -1,75 +1,110 @@
-.app__contact{
-    padding: 5rem 0;
-}
-.contact-heading{
-    font-family: 'Poppins', sans-serif;;
-    font-size: 60px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 4rem;
-    @media (max-width: 992px) {
-        font-size: 42px;
-        margin-right: 0;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
+.app__contact {
+  padding: 5rem 0;
 }
 
-form{
+.contact-heading {
+  font-family: 'Poppins', sans-serif;
+  ;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @media (max-width: 992px) {
+    font-size: 42px;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+form {
   max-width: 915px;
   margin: 0 auto;
 }
 
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select {
+  position: relative;
+}
+
+// .select:after {
+//   content: '\1F893';
+//   position: absolute;
+//   top: 32%;
+//   right: 16px;
+//   color: #000;
+//   font-size: 32px;
+// }
+
+/* Add these styles to your CSS */
+.select:after {
+  position: absolute;
+  top: 32%;
+  right: 16px;
+  font-size: 32px;
+  content: '\1F893';
+  color: #000; /* Default color for the content arrow */
+}
+
+.select.focused:after {
+  color: #ffffff; /* Change this color to the desired color when the select is focused */
+}
+
+
 .form-input {
-    background-color: #fff;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    border: solid 1px #000000;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin-top: 1rem;
-    margin-bottom: 15px;
-    width: 100%;
-    transition: all 0.3s ease;
-  }
-  
-  .form-input:focus {
-    background-color: #cd3266;
-    color: #ffffff;
-    border: solid 1px #cd3266;
-    outline: none;
-    &::placeholder{
-        color: white;
-    }
-  }
-  .form-input::placeholder{
-    color: grey;
-  }
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: solid 1px #000000;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
 
-  .form-input option{
-    background: #fff;
-    color: #000;
+.form-input:focus {
+  background-color: #cd3266;
+  color: #ffffff;
+  border: solid 1px #cd3266;
+  outline: none;
+  
+  &::placeholder {
+    color: white;
   }
-  
+}
 
-  
+.form-input::placeholder {
+  color: grey;
+}
+
+.form-input option {
+  background: #fff;
+  color: #000;
+}
+
 .submit-button {
-    width: 350px;
-    height: 60px;
-    margin-top: 2rem;
-    background-color: #cd3266;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #ca2b60;
-  }
-  
+  width: 350px;
+  height: 60px;
+  margin-top: 2rem;
+  background-color: #cd3266;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ca2b60;
+}
