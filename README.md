@@ -4,7 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+First run this command on terminal
+
+### `npm install`
+
+Now you live this project on localhost using this below command
 
 ### `npm start`
 
