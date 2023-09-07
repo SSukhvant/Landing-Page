@@ -85,7 +85,7 @@ function Contact() {
               <div className={`select ${isSelectFocused ? 'focused' : ''}`}>
               <select id="inquiryType" className="form-input" name="inquryType" value={formData.inquryType}
               onChange={handleChange} onFocus={handleSelectFocus}
-              onBlur={handleSelectBlur}>
+              onBlur={handleSelectBlur} >
               <option value="">Select</option>
                 <option value="general">Information</option>
                 <option value="support">Support</option>

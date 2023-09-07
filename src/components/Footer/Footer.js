@@ -1,7 +1,7 @@
 import './Footer.scss'
 import { IoLogoTwitter } from "react-icons/io";
 import { BiLogoLinkedin } from "react-icons/bi"
-import logo from '../../assets/logo/logo.png'
+import logo from '../../assets/logo/logo.svg'
 
 const Footer = () => {
   return (

@@ -17,5 +17,8 @@
 }
 
 .active a {
-    color: #CD3266;
+    color: #CD3266 !important;
+    &:hover{
+        color: #cd3266 !important;
+    }
 }

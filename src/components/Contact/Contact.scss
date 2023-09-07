@@ -58,6 +58,10 @@ select {
   color: #ffffff; /* Change this color to the desired color when the select is focused */
 }
 
+.form-input option:hover{
+  background: #ca2b60;
+}
+
 
 .form-input {
   background-color: #fff;

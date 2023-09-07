@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../assets/logo/logo.png';
+import logo from '../../assets/logo/logo.svg';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
       const kbSection = document.getElementById('kb').offsetTop;
       const testSection = document.getElementById('testimonials').offsetTop;
 
-      if (scrollY < kbSection) {
+      if (scrollY < kbSection-1) {
         setActiveSection('home'); // Change to 'home'
       } else if (scrollY < testSection) {
         setActiveSection('features'); // Change to 'features'
@@ -52,22 +52,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
             <li className={`nav-item ${activeSection === 'home' ? 'active' : ''}`}>
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="/#" onClick={() => setActiveSection('home')}>
                 Home
               </a>
             </li>
             <li className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}>
-              <a className="nav-link" href="/#contact">
+              <a className="nav-link" href="/#contact" onClick={() => setActiveSection('contact')}>
                 Pricing
               </a>
             </li>
             <li className={`nav-item ${activeSection === 'features' ? 'active' : ''}`}>
-              <a className="nav-link" href="/#kb">
+              <a className="nav-link" href="/#kb" onClick={() => setActiveSection('features')}>
                 Features
               </a>
             </li>
             <li className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}>
-              <a className="nav-link" href="/#contact">
+              <a className="nav-link" href="/#contact" onClick={() => setActiveSection('contact')}>
                 Contact Us
               </a>
             </li>
