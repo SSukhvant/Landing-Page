@@ -51,14 +51,16 @@ select {
   font-weight: 400;
   content: '\25BC';
   // transform: rotate(180deg);
-  color: #000; /* Default color for the content arrow */
+  color: #000;
+  /* Default color for the content arrow */
 }
 
 .select.focused:after {
-  color: #ffffff; /* Change this color to the desired color when the select is focused */
+  color: #ffffff;
+  /* Change this color to the desired color when the select is focused */
 }
 
-.form-input option:hover{
+.form-input option:hover {
   background: #ca2b60;
 }
 
@@ -82,7 +84,7 @@ select {
   color: #ffffff;
   border: solid 1px #cd3266;
   outline: none;
-  
+
   &::placeholder {
     color: white;
   }
@@ -117,9 +119,10 @@ select {
 }
 
 
-.autocomplete{
+.autocomplete {
   position: relative;
-  .suggestions{
+
+  .suggestions {
     position: absolute;
     width: 100%;
     background: #fff;
@@ -128,14 +131,15 @@ select {
     margin: 0;
     padding: 0;
     z-index: 100;
-    li{
+
+    li {
       padding: 1rem;
       cursor: pointer;
-      &:hover{
+
+      &:hover {
         color: white;
-        background:#cd3266;
+        background: #cd3266;
       }
     }
   }
 }
-

@@ -7,7 +7,7 @@ const Navbar = () => {
   const button2Ref = useRef(null);
 
   const handleButtonClick = (val) => {
-    setActiveSection(val)
+    setActiveSection(val);
     button2Ref.current.click();
   };
   const [activeSection, setActiveSection] = useState("home");
@@ -64,7 +64,7 @@ const Navbar = () => {
               <a
                 className="nav-link"
                 href="/#"
-                onClick={() => handleButtonClick('home')}
+                onClick={() => handleButtonClick("home")}
               >
                 Home
               </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
               <a
                 className="nav-link"
                 href="/#contact"
-                onClick={() => handleButtonClick('contact')}
+                onClick={() => handleButtonClick("contact")}
               >
                 Pricing
               </a>
@@ -90,7 +90,7 @@ const Navbar = () => {
               <a
                 className="nav-link"
                 href="/#kb"
-                onClick={() => handleButtonClick('features')}
+                onClick={() => handleButtonClick("features")}
               >
                 Features
               </a>
@@ -103,7 +103,7 @@ const Navbar = () => {
               <a
                 className="nav-link"
                 href="/#contact"
-                onClick={() => handleButtonClick('contact')}
+                onClick={() => handleButtonClick("contact")}
               >
                 Contact Us
               </a>

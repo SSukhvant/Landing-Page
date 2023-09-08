@@ -1,8 +1,7 @@
 import { useState } from "react";
-import './Contact.scss';
+import "./Contact.scss";
 
 const AutoComplete = ({ data }) => {
-    
   const [suggestions, setSuggestions] = useState([]);
   const [suggestionIndex, setSuggestionIndex] = useState(0);
   const [suggestionsActive, setSuggestionsActive] = useState(false);
@@ -13,8 +12,7 @@ const AutoComplete = ({ data }) => {
     setValue(query);
     if (query.length > 1) {
       const filterSuggestions = data.filter(
-        (suggestion) =>
-          suggestion.toLowerCase().indexOf(query) > -1
+        (suggestion) => suggestion.toLowerCase().indexOf(query) > -1
       );
       setSuggestions(filterSuggestions);
       setSuggestionsActive(true);
@@ -83,7 +81,6 @@ const AutoComplete = ({ data }) => {
       {suggestionsActive && <Suggestions />}
     </div>
   );
-  
 };
 
 export default AutoComplete;

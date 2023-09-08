@@ -4,35 +4,31 @@ import AutoComplete from "./AutoComplete";
 import { autoCompleteData } from "./Data";
 
 function Contact() {
-
   const [formData, setFormData] = useState({
-    inquryType: '',
+    inquryType: "",
   });
-
-  // const [isSelectFocused, setIsSelectFocused] = useState(false);
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       // Send formData to the server for email processing
-      const response = await fetch('/mail', {
-        method: 'POST',
+      const response = await fetch("/mail", {
+        method: "POST",
         body: JSON.stringify(formData),
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
       });
 
       if (response.ok) {
         // Show success message to the user
-        alert('Message sent successfully!');
+        alert("Message sent successfully!");
       } else {
         // Handle error
-        alert('Message sending failed.');
+        alert("Message sending failed.");
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
@@ -40,15 +36,6 @@ function Contact() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
-  // const handleSelectFocus = () => {
-  //   setIsSelectFocused(true);
-  // };
-
-  // const handleSelectBlur = () => {
-  //   setIsSelectFocused(false);
-  // };
-  
 
   return (
     <section className="app__contact" id="contact">
@@ -84,17 +71,7 @@ function Contact() {
 
             <div className="col-12 col-md-6 form-group">
               <label htmlFor="inquiryType">Inquiry Type</label>
-{  /*            <div className={`select ${isSelectFocused ? 'focused' : ''}`}>
-              <select id="inquiryType" className="form-input" name="inquryType" value={formData.inquryType}
-              onChange={handleChange} onFocus={handleSelectFocus}
-              onBlur={handleSelectBlur} >
-              <option value="">Select</option>
-                <option value="general">Information</option>
-                <option value="support">Support</option>
-                <option value="sales">Sales</option>
-              </select>
-  </div> */}
-            <AutoComplete data={autoCompleteData}/> 
+              <AutoComplete data={autoCompleteData} />
             </div>
 
             <div className="col-12 col-md-6 form-group">
